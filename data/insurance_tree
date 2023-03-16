@@ -1,0 +1,33 @@
+digraph Tree {
+node [shape=box, style="filled, rounded", color="black", fontname="helvetica"] ;
+edge [fontname="helvetica"] ;
+0 [label=<smoker_no &le; 0.5<br/>squared_error = 148615380.701<br/>samples = 936<br/>value = 13276.699>, fillcolor="#f9e3d3"] ;
+1 [label=<bmi &le; 30.1<br/>squared_error = 128222234.445<br/>samples = 193<br/>value = 32319.614>, fillcolor="#edaa79"] ;
+0 -> 1 [labeldistance=2.5, labelangle=45, headlabel="True"] ;
+2 [label=<age &le; 41.0<br/>squared_error = 28614868.976<br/>samples = 90<br/>value = 21742.658>, fillcolor="#f4caab"] ;
+1 -> 2 ;
+3 [label=<squared_error = 15415578.831<br/>samples = 50<br/>value = 18813.648>, fillcolor="#f6d3b9"] ;
+2 -> 3 ;
+4 [label=<squared_error = 20985258.789<br/>samples = 40<br/>value = 25403.921>, fillcolor="#f2bf9a"] ;
+2 -> 4 ;
+5 [label=<age &le; 42.0<br/>squared_error = 32091009.861<br/>samples = 103<br/>value = 41561.614>, fillcolor="#e88e4d"] ;
+1 -> 5 ;
+6 [label=<squared_error = 14178087.33<br/>samples = 57<br/>value = 38158.232>, fillcolor="#ea985d"] ;
+5 -> 6 ;
+7 [label=<squared_error = 22149543.998<br/>samples = 46<br/>value = 45778.847>, fillcolor="#e58139"] ;
+5 -> 7 ;
+8 [label=<age &le; 44.5<br/>squared_error = 35247724.167<br/>samples = 743<br/>value = 8330.154>, fillcolor="#fcf2eb"] ;
+0 -> 8 [labeldistance=2.5, labelangle=-45, headlabel="False"] ;
+9 [label=<age &le; 26.5<br/>squared_error = 22586421.136<br/>samples = 457<br/>value = 5693.406>, fillcolor="#fefaf7"] ;
+8 -> 9 ;
+10 [label=<squared_error = 25908662.634<br/>samples = 189<br/>value = 4114.2>, fillcolor="#ffffff"] ;
+9 -> 10 ;
+11 [label=<squared_error = 17244430.122<br/>samples = 268<br/>value = 6807.1>, fillcolor="#fdf7f2"] ;
+9 -> 11 ;
+12 [label=<age &le; 51.5<br/>squared_error = 26618329.511<br/>samples = 286<br/>value = 12543.419>, fillcolor="#fae6d7"] ;
+8 -> 12 ;
+13 [label=<squared_error = 17693795.987<br/>samples = 105<br/>value = 10198.359>, fillcolor="#fbede2"] ;
+12 -> 13 ;
+14 [label=<squared_error = 26754667.1<br/>samples = 181<br/>value = 13903.813>, fillcolor="#f9e1d0"] ;
+12 -> 14 ;
+}
